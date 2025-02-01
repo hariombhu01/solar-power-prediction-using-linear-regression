@@ -1,21 +1,35 @@
-# Week1
+# Week2
 This project focuses on predicting solar power output by building a machine learning model using linear regression. The model estimates solar power generation based on key environmental and operational factors such as temperature, sunlight intensity, and panel orientation.
 
-Key Features:
-Linear Regression Model: Developed and trained a linear regression model to accurately predict solar power output.
-Data Preprocessing: Cleaned and prepared raw data for analysis using Python libraries such as Pandas and NumPy.
-Visualization: Utilized Matplotlib and Seaborn to explore data trends and visualize model predictions.
-Evaluation: Measured model performance using metrics like Mean Absolute Error (MAE) and R-squared to ensure high accuracy.
+1. Introduction
+This report summarizes the progress of the solar power prediction model using linear regression. The goal is to predict the amount of power generated (in kW) based on various environmental and operational features.
 
+2. Data Exploration & Preprocessing
+- The dataset was loaded from 'solar power dataset.csv'.
+- Initial exploratory analysis showed that the dataset contains multiple numerical features.
+- Summary statistics and data structure were analyzed using `.describe()`, `.info()`, and `.shape()`.
+- Missing values and duplicate records were checked and handled appropriately.
+- Data visualization techniques (histograms, scatter plots) were applied to understand feature distributions and relationships.
 
-Technologies Used:
-Linear Regression
-Python
-Scikit-learn
-Pandas
-Matplotlib
-Seaborn
+3. Model Development
+- The dataset was split into training and testing sets.
+- A linear regression model was trained using key predictive features.
+- Feature selection was performed based on correlation analysis.
 
-This project showcases the application of linear regression in renewable energy forecasting, enabling better optimization of solar panel performance and energy management strategies.
+4. Model Performance Evaluation
+The model was evaluated using the following metrics:
+- Mean Absolute Error (MAE): Measures the average absolute errors in predictions.
+- Mean Squared Error (MSE): Evaluates the squared differences between actual and predicted values.
+- R² Score: Assesses how well the model explains the variance in power generation.
 
-This emphasizes the use of linear regression as the core technique in your project.
+5. Observations & Insights
+- The model showed moderate performance, indicating that linear regression captures some trends in the data but may not account for all complexities.
+- Some features may exhibit non-linear relationships, requiring more advanced models such as polynomial regression or machine learning approaches.
+
+6. Next Steps & Recommendations
+- Improve feature engineering by incorporating additional environmental factors.
+- Explore alternative regression models, such as decision trees or random forests, to improve accuracy.
+- Fine-tune hyperparameters and experiment with feature scaling to enhance model performance.
+
+Conclusion
+The linear regression model provides a basic but effective starting point for solar power prediction. Further refinements and experimentation with more advanced techniques could enhance predictive accuracy for real-world applications.
